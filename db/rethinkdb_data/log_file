@@ -1,0 +1,116 @@
+2018-09-13T11:01:20.744277000 0.020885s notice: In recursion: removing file 'C:\\rethinkdb\\rethinkdb_data\\tmp'
+2018-09-13T11:01:20.746241500 0.022129s warn: Trying to delete non-existent file 'C:\\rethinkdb\\rethinkdb_data\\tmp'
+2018-09-13T11:01:20.748181700 0.024667s notice: Initializing directory C:\\rethinkdb\\rethinkdb_data
+2018-09-13T11:01:20.750134400 0.026168s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory 'C:\\rethinkdb\\rethinkdb_data' did not already exist or is empty.)
+2018-09-13T11:01:20.750134401 0.026251s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-13T11:01:20.750134402 0.026374s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-13T11:01:20.750134403 0.026719s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-13T11:01:21.183731700 0.460302s info: Automatically using cache size of 697 MB
+2018-09-13T11:01:21.198390000 0.475014s notice: Listening for intracluster connections on port 29015
+2018-09-13T11:01:21.202283800 0.478923s notice: Listening for client driver connections on port 28015
+2018-09-13T11:01:21.203260700 0.479322s notice: Listening for administrative HTTP connections on port 8080
+2018-09-13T11:01:21.203260701 0.479332s notice: Listening on cluster address: 127.0.0.1
+2018-09-13T11:01:21.203260702 0.479336s notice: Listening on driver address: 127.0.0.1
+2018-09-13T11:01:21.203260703 0.479343s notice: Listening on http address: 127.0.0.1
+2018-09-13T11:01:21.203260704 0.479346s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-09-13T11:01:21.203260705 0.479353s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T00:24:48.243211600 0.206192s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-19T00:24:48.254929000 0.217341s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-19T00:24:48.254929001 0.217494s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-19T00:24:48.492727700 0.454951s info: Automatically using cache size of 393 MB
+2018-09-19T00:24:48.546443400 0.509082s notice: Listening for intracluster connections on port 29015
+2018-09-19T00:24:48.579640900 0.542447s notice: Listening for client driver connections on port 28015
+2018-09-19T00:24:48.579640901 0.542734s notice: Listening for administrative HTTP connections on port 8080
+2018-09-19T00:24:48.579640902 0.542750s notice: Listening on cluster address: 127.0.0.1
+2018-09-19T00:24:48.579640903 0.542754s notice: Listening on driver address: 127.0.0.1
+2018-09-19T00:24:48.579640904 0.542761s notice: Listening on http address: 127.0.0.1
+2018-09-19T00:24:48.579640905 0.542763s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-09-19T00:24:48.579640906 0.542770s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T00:26:41.592789300 113.555183s notice: Server got Control-C; shutting down...
+2018-09-19T00:26:41.592789301 113.555374s notice: Shutting down client connections...
+2018-09-19T00:26:41.592789302 113.555561s notice: All client connections closed.
+2018-09-19T00:26:41.592789303 113.555570s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-19T00:26:41.647476400 113.610615s notice: Storage engine shut down.
+2018-09-19T00:26:46.763221500 0.019261s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-19T00:26:46.763221501 0.019490s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-19T00:26:46.765173700 0.021261s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-19T00:26:46.839396300 0.095428s info: Automatically using cache size of 442 MB
+2018-09-19T00:26:46.847219100 0.102881s notice: Listening for intracluster connections on port 29015
+2018-09-19T00:26:46.851112000 0.106894s notice: Listening for client driver connections on port 28015
+2018-09-19T00:26:46.852094800 0.107724s notice: Listening for administrative HTTP connections on port 8080
+2018-09-19T00:26:46.852094801 0.108526s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:26:46.853064500 0.109451s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:26:46.854042600 0.110158s notice: Listening on http addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:26:46.854042601 0.110176s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T00:27:34.849358700 48.105033s notice: Server got Control-C; shutting down...
+2018-09-19T00:27:34.849358701 48.105522s notice: Shutting down client connections...
+2018-09-19T00:27:34.849358702 48.105814s notice: All client connections closed.
+2018-09-19T00:27:34.849358703 48.105821s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-19T00:27:34.851313700 48.107159s notice: Storage engine shut down.
+2018-09-19T00:29:45.578871000 0.023206s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-19T00:29:45.579846000 0.023730s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-19T00:29:45.581798500 0.026088s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-19T00:29:45.669689300 0.114016s info: Automatically using cache size of 425 MB
+2018-09-19T00:29:45.677504500 0.121976s notice: Listening for intracluster connections on port 29015
+2018-09-19T00:29:45.682382500 0.126490s notice: Listening for client driver connections on port 28015
+2018-09-19T00:29:45.682382501 0.126875s notice: Listening for administrative HTTP connections on port 8080
+2018-09-19T00:29:45.683365900 0.127883s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:29:45.684338000 0.128737s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:29:45.685318600 0.129295s notice: Listening on http addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:29:45.685318601 0.129310s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T00:31:25.784313600 100.228641s notice: Server got Control-C; shutting down...
+2018-09-19T00:31:25.784313601 100.228886s notice: Shutting down client connections...
+2018-09-19T00:31:25.785287800 100.229380s notice: All client connections closed.
+2018-09-19T00:31:25.785287801 100.229390s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-19T00:31:25.785287802 100.229960s notice: Storage engine shut down.
+2018-09-19T00:31:43.206736300 0.019775s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-19T00:31:43.206736301 0.020037s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-19T00:31:43.208691000 0.021917s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-19T00:31:43.286811000 0.100131s info: Automatically using cache size of 453 MB
+2018-09-19T00:31:43.294625900 0.107528s notice: Listening for intracluster connections on port 29015
+2018-09-19T00:31:43.298539600 0.111603s notice: Listening for client driver connections on port 28015
+2018-09-19T00:31:43.299517600 0.112264s notice: Listening for administrative HTTP connections on port 8080
+2018-09-19T00:31:43.300488700 0.113133s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:31:43.300488701 0.113818s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:31:43.301468700 0.114483s notice: Listening on http addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T00:31:43.301468701 0.114492s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T00:32:19.585766000 36.398954s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: Starting a new Raft election for term 1.
+2018-09-19T00:32:19.586745800 36.399721s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: Added replica on this server.
+2018-09-19T00:32:19.658029700 36.470774s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: This server is Raft leader for term 1. Latest log index is 0.
+2018-09-19T11:14:42.803618800 0.030258s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-19T11:14:42.816316200 0.042866s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-19T11:14:42.816316201 0.042978s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-19T11:14:42.913971900 0.140846s info: Automatically using cache size of 923 MB
+2018-09-19T11:14:42.918853500 0.145943s notice: Listening for intracluster connections on port 29015
+2018-09-19T11:14:43.185456500 0.412329s notice: Listening for client driver connections on port 28015
+2018-09-19T11:14:43.191315900 0.417924s notice: Listening for administrative HTTP connections on port 8080
+2018-09-19T11:14:43.191315901 0.417937s notice: Listening on cluster address: 127.0.0.1
+2018-09-19T11:14:43.191315902 0.417940s notice: Listening on driver address: 127.0.0.1
+2018-09-19T11:14:43.191315903 0.417943s notice: Listening on http address: 127.0.0.1
+2018-09-19T11:14:43.191315904 0.417946s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-09-19T11:14:43.191315905 0.417949s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T11:14:44.302650800 1.529214s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: Starting a new Raft election for term 2.
+2018-09-19T11:14:44.513599700 1.740472s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: This server is Raft leader for term 2. Latest log index is 2.
+2018-09-19T11:14:44.974529600 2.200905s notice: Server got Control-C; shutting down...
+2018-09-19T11:14:44.981366500 2.207836s notice: Shutting down client connections...
+2018-09-19T11:14:44.981366501 2.208226s notice: All client connections closed.
+2018-09-19T11:14:44.981366502 2.208238s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-19T11:14:45.379806700 2.606634s notice: Storage engine shut down.
+2018-09-19T11:14:52.652316200 0.019744s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-19T11:14:52.652316201 0.020015s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-19T11:14:52.654267300 0.022018s notice: Loading data from directory C:\\rethinkdb\\rethinkdb_data
+2018-09-19T11:14:52.990207600 0.358351s info: Automatically using cache size of 866 MB
+2018-09-19T11:14:52.998995900 0.366577s notice: Listening for intracluster connections on port 29015
+2018-09-19T11:14:53.022434100 0.389962s notice: Listening for client driver connections on port 28015
+2018-09-19T11:14:53.022434101 0.390484s notice: Listening for administrative HTTP connections on port 8080
+2018-09-19T11:14:53.023410200 0.391527s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T11:14:53.025364000 0.392785s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T11:14:53.025364001 0.393206s notice: Listening on http addresses: 127.0.0.1, 192.168.1.8, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-19T11:14:53.025364002 0.393215s notice: Server ready, "DESKTOP_U2S49UA_3ct" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-19T11:14:54.032694300 1.400467s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: Starting a new Raft election for term 3.
+2018-09-19T11:14:54.240713500 1.608907s info: Table 2cfa8eaa-16f3-4ce5-9756-26ffb73e9d58: This server is Raft leader for term 3. Latest log index is 4.
+2018-09-19T13:08:02.801107000 6790.168826s notice: Server got Control-C; shutting down...
+2018-09-19T13:08:02.809894400 6790.177909s notice: Shutting down client connections...
+2018-09-19T13:08:02.810871300 6790.178456s notice: All client connections closed.
+2018-09-19T13:08:02.810871301 6790.178466s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-19T13:08:02.973969200 6790.342039s notice: Storage engine shut down.

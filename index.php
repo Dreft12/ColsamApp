@@ -17,7 +17,14 @@ if(!isset($_SESSION['Controller'])){
 <div id="app">
     <v-app>
         <v-navigation-drawer app></v-navigation-drawer>
-        <v-toolbar app>ColsamApp</v-toolbar>
+        <v-toolbar app color="primary">
+            <v-toolbar-side-icon class="white--text"></v-toolbar-side-icon>
+            <v-toolbar-title class="white--text">ColsamApp</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn icon>
+            <v-icon class="white--text">more_vert</v-icon>
+        </v-btn>
+        </v-toolbar>
         <v-content>
             <v-container fluid>
                 <router-view></router-view>
@@ -29,8 +36,6 @@ if(!isset($_SESSION['Controller'])){
 
 <script src="app/javascript/vue.js"></script>
 <script src="app/javascript/vuetify.js"></script>
-<script>
-    new Vue({ el: '#app' })
-</script>
+<script src="app/javascript/app.js"></script>
 </body>
 </html>

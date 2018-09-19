@@ -1,5 +1,5 @@
 <?php
-require  $_SERVER['DOCUMENT_ROOT']."/ColsamApp/back/db/Connect.php";
+require  $_SERVER['DOCUMENT_ROOT']."/ColsamApp/db/Connect.php";
 
 class Controller
 {

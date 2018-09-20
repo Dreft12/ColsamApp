@@ -11,9 +11,16 @@ class Controller
 
     public function create(){
         r\table("users")->insert(array(
-            'id' => 4,
-            'nombre' => "FUNCIONAAAAAAAAAAAAAA",
-            'apellido' => "XDXDXD"
+            'idUser' => 2,
+            'Nombre' => "Juancho",
+            'Apellido' => "Perez",
+            'User' => "Juanxd",
+            'Pass' => "12345"
         ))->run(Connect::conectar());
+    }
+
+    public function login($user){
+        $datos = r\table("users")->getAll($user,array('index'=>'User'))->run(Connect::conectar())->toArray();
+        return $datos;
     }
 }

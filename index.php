@@ -10,7 +10,6 @@
 <body>
 <div id="app">
     <v-app>
-        <v-navigation-drawer app></v-navigation-drawer>
         <v-toolbar app color="primary">
             <v-toolbar-title class="white--text">Bienvenidos a ColsamApp</v-toolbar-title>
         <v-spacer></v-spacer>

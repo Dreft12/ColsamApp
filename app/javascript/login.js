@@ -9,7 +9,7 @@ new Vue({
         redireccion: false,
         exito: false,
         usuario:[],
-        dark: 'dark'
+        isDark: false
     },
     methods:{
         validar: function () {

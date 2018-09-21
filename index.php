@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app">
-    <v-app>
+    <v-app :dark="isDark">
         <v-toolbar app color="primary" class="toolbar">
                 <v-toolbar-title class="white--text titulo">
                     <v-img src="app/images/logo.png" class="logo" height="66" width="54"></v-img>Bienvenidos a ColsamApp</v-toolbar-title>
@@ -23,6 +23,18 @@
                 <v-btn flat icon color="white" v-on:click="irA">
                     <v-icon>favorite</v-icon>
                 </v-btn>
+                <v-menu bottom left>
+                    <v-btn slot="activator" dark icon>
+                        <v-icon>more_vert</v-icon>
+                    </v-btn>
+                    <v-list>
+                        <v-list-tile>
+                            <v-list-tile-title><v-switch
+                                        label="Tema oscuro"
+                                        v-model="isDark"
+                                ></v-switch></v-list-tile-title>
+                        </v-list-tile>
+                    </v-list>
             </v-toolbar-items>
         </v-toolbar>
         <v-content>

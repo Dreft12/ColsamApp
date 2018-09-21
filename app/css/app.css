@@ -21,3 +21,9 @@
 .footer-bar{
     height: 64px!important;
 }
+
+@media screen and (max-width: 1367px) {
+    .toolbar{
+        height: 11%!important
+    }
+}

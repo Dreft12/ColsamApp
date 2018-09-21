@@ -20,7 +20,17 @@ class Controller
     }
 
     public function login($user){
+        $temp = array();
         $datos = r\table("users")->getAll($user,array('index'=>'User'))->run(Connect::conectar())->toArray();
-        return $datos;
+        $mora = r\table("users")->eqJoin('idUser', r\table('estMora'), array('index'=>'idEst'))->zip()->run(Connect::conectar())->toArray();
+        $conteo = r\table('estMora')->count()->run(Connect::conectar());
+        for ($i = 1; $i <= $conteo; $i++){
+            if ($datos[0]['idUser'] == $mora[0]['idEst']){
+                $temp = array('Mora'=>'Si');
+            }else{
+               $temp = $datos;
+            }
+        }
+        return $temp;
     }
 }

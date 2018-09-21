@@ -10,7 +10,8 @@ new Vue({
         exito: false,
         usuario:[],
         isDark: false,
-        dialog: false
+        dialog: false,
+        dialogMora: false
     },
     methods:{
         validar: function () {
@@ -25,12 +26,14 @@ new Vue({
         login: function () {
             this.$http.post('/ColsamApp/data/login.php',{user: this.user}).then(function (respuesta) {
                 this.usuario = respuesta.body;
+                console.log(this.usuario);
                 if (this.usuario.length === 0){
                     this.errorLogin = true;
-                }else if (this.usuario[0].User === this.user && this.usuario[0].Pass === this.pass){
+                }else if(this.usuario.Mora === "Si"){
+                    this.dialogMora = true;
+                } else if (this.usuario[0].User === this.user && this.usuario[0].Pass === this.pass){
                     this.exito = true;
                     setInterval(this.redireccionar, 3000);
-
                     setTimeout("location.href = '/ColsamApp/panel.php'", 5000);
                 }else{
                     this.errorLogin = true

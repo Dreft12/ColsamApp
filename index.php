@@ -55,6 +55,20 @@
                         </v-card-actions>
                     </v-card>
                 </v-dialog>
+                <v-dialog v-model="dialogMora" max-width="500px">
+                    <v-card>
+                        <v-card-title>
+                            <span class="headline">No se ha podido ingresar al sistema</span>
+                        </v-card-title>
+                        <v-card-text>
+                                <v-layout wrap>
+                                    <v-flex xs12>
+                                        No ha realizado el(los) pago(pagos) pendientes de la pensión, por favor realice los pagos pertinentes para tener acceso al panel de notas.
+                                    </v-flex>
+                                </v-layout>
+                        </v-card-text>
+                    </v-card>
+                </v-dialog>
                 <v-btn flat icon color="white" v-on:click="irA('https://github.com/Dreft12/ColsamApp')">
                     <v-icon>favorite</v-icon>
                 </v-btn>

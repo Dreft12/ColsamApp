@@ -26,10 +26,11 @@
                                 <v-alert type="error" v-model="errorPass" dismissible>Por favor ingrese una contraseña valida.</v-alert>
                                 <v-alert type="error" v-model="errorUser" dismissible>Por favor ingrese un usuario valido.</v-alert>
                                 <v-alert type="error" v-model="errorLogin" dismissible>Usuario y/o contraseña incorrecta.</v-alert>
+                                <v-alert type="info" v-model="redireccion">Redirigiendo al panel, por favor espere...</v-alert>
                                 <v-alert type="success" v-model="exito" dismissible v-for="us in usuario">Bienvenido al sistema: {{ us.Nombre }} {{ us.Apellido }}.</v-alert>
                                 <v-form>
-                                    <v-text-field v-model="user" name="user" prepend-icon="person" label="Usuario" type="text"></v-text-field>
-                                    <v-text-field v-model="pass" id="password" prepend-icon="lock"  label="Contraseña" type="password"></v-text-field>
+                                    <v-text-field v-model="user" v-on:keypress.enter="validar" name="user" prepend-icon="person" label="Usuario" type="text"></v-text-field>
+                                    <v-text-field v-model="pass" v-on:keypress.enter="validar" id="password" prepend-icon="lock"  label="Contraseña" type="password"></v-text-field>
                                 </v-form>
                             </v-card-text>
                             <v-card-actions>
@@ -47,7 +48,7 @@
 
 <script src="app/javascript/vue.js"></script>
 <script src="app/javascript/vuetify.js"></script>
-<script src="app/javascript/app.js"></script>
+<script src="app/javascript/login.js"></script>
 <script src="app/javascript/vue-resource@1.3.5"></script>
 </body>
 </html>

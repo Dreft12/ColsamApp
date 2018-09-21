@@ -6,6 +6,7 @@ new Vue({
         errorPass: false,
         errorUser: false,
         errorLogin: false,
+        redireccion: false,
         exito: false,
         usuario:[]
     },
@@ -26,13 +27,20 @@ new Vue({
                     this.errorLogin = true;
                 }else if (this.usuario[0].User === this.user && this.usuario[0].Pass === this.pass){
                     this.exito = true;
-                    this.errorPass = false;
-                    this.errorUser = false;
-                    this.errorLogin = false;
+                    setInterval(this.redireccionar, 3000);
+
+                    setTimeout("location.href = '/ColsamApp/panel.php'", 5000);
                 }else{
                     this.errorLogin = true
                 }
             })
+        },
+        redireccionar: function () {
+            this.exito = false;
+            this.errorPass = false;
+            this.errorUser = false;
+            this.errorLogin = false;
+            this.redireccion = true;
         }
     }
 });

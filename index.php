@@ -81,8 +81,10 @@
                             <v-list-tile-title><v-switch
                                         label="Tema oscuro"
                                         v-model="isDark"
-                                ></v-switch></v-list-tile-title>
+                                ></v-switch>
+                            </v-list-tile-title>
                         </v-list-tile>
+                        <v-btn v:on:clicl="passforget" color="primary">¿Olvidaste la contraseña?</v-btn>
                     </v-list>
             </v-toolbar-items>
         </v-toolbar>
@@ -108,6 +110,8 @@
                             <v-card-actions>
                                 <v-spacer></v-spacer>
                                 <v-btn v-on:click="validar" color="primary">Entrar</v-btn>
+                                <v-btn v-on:click="reset" color="primary">Limpiar</v-btn>
+
                             </v-card-actions>
                         </v-card>
                     </v-flex>

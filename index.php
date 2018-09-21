@@ -4,15 +4,26 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
     <link href="app/css/vuetify.min.css" rel="stylesheet">
+    <link href="app/css/app.css" rel="stylesheet">
+    <link href="app/css/palette.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <title>ColsamApp - Pagina Principal</title>
 </head>
 <body>
 <div id="app">
     <v-app>
-        <v-toolbar app color="primary">
-            <v-toolbar-title class="white--text">Bienvenidos a ColsamApp</v-toolbar-title>
-        <v-spacer></v-spacer>
+        <v-toolbar app color="primary" class="toolbar">
+                <v-toolbar-title class="white--text titulo">
+                    <v-img src="app/images/logo.png" class="logo" height="66" width="54"></v-img>Bienvenidos a ColsamApp</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-toolbar-items>
+                <v-btn flat class="white--text">Quienes somos</v-btn>
+                <v-btn flat class="white--text">Ayuda</v-btn>
+                <v-btn flat class="white--text">Contactenos</v-btn>
+                <v-btn flat icon color="white" v-on:click="irA">
+                    <v-icon>favorite</v-icon>
+                </v-btn>
+            </v-toolbar-items>
         </v-toolbar>
         <v-content>
             <v-container fluid fill-height>

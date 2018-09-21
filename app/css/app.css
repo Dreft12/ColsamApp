@@ -1,0 +1,19 @@
+.toolbar{
+    height: 7%!important
+}
+
+
+.v-toolbar__title{
+    font-size: 24px!important;
+}
+
+.titulo{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-flow: nowrap; */
+    align-items: center;
+}
+
+.logo{
+    margin-right: 10px;
+}

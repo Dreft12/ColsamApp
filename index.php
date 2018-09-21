@@ -19,8 +19,43 @@
             <v-toolbar-items>
                 <v-btn flat class="white--text">Quienes somos</v-btn>
                 <v-btn flat class="white--text">Ayuda</v-btn>
-                <v-btn flat class="white--text">Contactenos</v-btn>
-                <v-btn flat icon color="white" v-on:click="irA">
+                <v-btn flat slot="activator" @click="dialogActivar" class="white--text">Contactenos</v-btn>
+                <v-dialog v-model="dialog" persistent max-width="500px">
+                    <v-card>
+                        <v-card-title>
+                            <span class="headline">Formulario de contacto</span>
+                        </v-card-title>
+                        <v-card-text>
+                            <v-container grid-list-md>
+                                <v-layout wrap>
+                                    <v-flex xs12>
+                                        <v-text-field label="Nombres*" required></v-text-field>
+                                        <v-text-field
+                                                label="Apellidos*" required
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12>
+                                        <v-text-field label="Correo*" required></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6>
+                                        <v-select
+                                                :items="['0-17', '18-29', '30-54', '54+']"
+                                                label="Edad*"
+                                                required
+                                        ></v-select>
+                                    </v-flex>
+                                </v-layout>
+                            </v-container>
+                            <small>*Todos los campos deben ser requeridos</small>
+                        </v-card-text>
+                        <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="blue darken-1" flat @click.native="dialog = false">Cerrar</v-btn>
+                            <v-btn color="blue darken-1" flat @click.native="dialog = false">Enviar</v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
+                <v-btn flat icon color="white" v-on:click="irA('https://github.com/Dreft12/ColsamApp')">
                     <v-icon>favorite</v-icon>
                 </v-btn>
                 <v-menu bottom left>
@@ -65,10 +100,11 @@
                 </v-layout>
             </v-container>
         </v-content>
-        <v-footer app></v-footer>
+        <v-footer app class="footer-bar">
+            <v-container class="text-lg-center">Todos los derechos reservados 2018, Casa San Luis Beltran de Barrranquilla</v-container>
+        </v-footer>
     </v-app>
 </div>
-
 <script src="app/javascript/vue.js"></script>
 <script src="app/javascript/vuetify.js"></script>
 <script src="app/javascript/login.js"></script>

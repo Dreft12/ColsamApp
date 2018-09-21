@@ -9,7 +9,8 @@ new Vue({
         redireccion: false,
         exito: false,
         usuario:[],
-        isDark: false
+        isDark: false,
+        dialog: false
     },
     methods:{
         validar: function () {
@@ -43,8 +44,11 @@ new Vue({
             this.errorLogin = false;
             this.redireccion = true;
         },
-        irA: function () {
-            location.href = 'https://github.com/Dreft12/ColsamApp';
+        irA: function (url) {
+            location.href = url;
+        },
+        dialogActivar: function () {
+            this.dialog = true
         }
     }
 });

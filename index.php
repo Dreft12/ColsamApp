@@ -63,7 +63,7 @@
                         <v-card-text>
                                 <v-layout wrap>
                                     <v-flex xs12>
-                                        No ha realizado el(los) pago(pagos) pendientes de la pensión, por favor realice los pagos pertinentes para tener acceso al panel de notas.
+                                        No ha realizado el(los) pago(pagos) pendientes de la pensión, por favor realice los pagos pertinentes para tener acceso al panel de notas; <br>Meses en mora: {{meses}}.
                                     </v-flex>
                                 </v-layout>
                         </v-card-text>
@@ -77,11 +77,11 @@
                         <v-icon>more_vert</v-icon>
                     </v-btn>
                     <v-list>
-                        <v-list-tile>
+                        <v-list-tile v-on:click="cookieTheme">
                             <v-list-tile-title><v-switch
                                         label="Tema oscuro"
                                         v-model="isDark"
-                                ></v-switch>
+                                 ></v-switch>
                             </v-list-tile-title>
                         </v-list-tile>
                         <v-btn color="primary">¿Olvidaste la contraseña?</v-btn>

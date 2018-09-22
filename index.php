@@ -84,7 +84,7 @@
                                 ></v-switch>
                             </v-list-tile-title>
                         </v-list-tile>
-                        <v-btn v:on:clicl="passforget" color="primary">¿Olvidaste la contraseña?</v-btn>
+                        <v-btn color="primary">¿Olvidaste la contraseña?</v-btn>
                     </v-list>
             </v-toolbar-items>
         </v-toolbar>
@@ -100,6 +100,7 @@
                                 <v-alert type="error" v-model="errorPass" dismissible>Por favor ingrese una contraseña valida.</v-alert>
                                 <v-alert type="error" v-model="errorUser" dismissible>Por favor ingrese un usuario valido.</v-alert>
                                 <v-alert type="error" v-model="errorLogin" dismissible>Usuario y/o contraseña incorrecta.</v-alert>
+                                <v-alert type="error" v-model="errorDB" dismissible>Error en la comunicación hacia la base de datos.</v-alert>
                                 <v-alert type="info" v-model="redireccion">Redirigiendo al panel, por favor espere...</v-alert>
                                 <v-alert type="success" v-model="exito" dismissible v-for="us in usuario">Bienvenido al sistema: {{ us.Nombre }} {{ us.Apellido }}.</v-alert>
                                 <v-form>
@@ -111,7 +112,6 @@
                                 <v-spacer></v-spacer>
                                 <v-btn v-on:click="validar" color="primary">Entrar</v-btn>
                                 <v-btn v-on:click="reset" color="primary">Limpiar</v-btn>
-
                             </v-card-actions>
                         </v-card>
                     </v-flex>
@@ -125,7 +125,7 @@
 </div>
 <script src="app/javascript/vue.js"></script>
 <script src="app/javascript/vuetify.js"></script>
-<script src="app/javascript/login.js"></script>
+<script src="app/javascript/app.js"></script>
 <script src="app/javascript/vue-resource@1.3.5"></script>
 </body>
 </html>

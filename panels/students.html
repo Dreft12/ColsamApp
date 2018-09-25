@@ -43,6 +43,20 @@
             </v-toolbar-items>
         </v-toolbar>
         <v-content>
+            <v-dialog v-model="errorNoIn" max-width="500px" persistent>
+                <v-card>
+                    <v-card-title>
+                        <span class="headline">Error al ingresar</span>
+                    </v-card-title>
+                    <v-card-text>
+                        <v-layout wrap>
+                            <v-flex xs12>
+                                Usted no se ha logueado correctamente en el sistema, por favor ingrese sus datos en la pagina de inicio. Será reedirigido a la pagina de inicio en 10 segundos.
+                            </v-flex>
+                        </v-layout>
+                    </v-card-text>
+                </v-card>
+            </v-dialog>
             <v-dialog v-model="dialogLogout" max-width="270px" content-class="alertCerrar" persistent>
                    <v-container class="text-xl-center white--text">Cerrando sesion por favor espere...</v-container> <v-progress-circular
                             :size="90"

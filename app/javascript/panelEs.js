@@ -20,13 +20,16 @@ new Vue({
         },
         cerrarSesion: function () {
             this.usuario = [];
-            localStorage.removeItem('User');
             this.dialogLogout = true;
+            setTimeout("localStorage.removeItem('User')", 3000);
             setTimeout("location.href = '/ColsamApp/index.html'", 5000);
         },
         noLogIn: function () {
             this.errorNoIn = true;
             setTimeout("location.href = '/ColsamApp/index.html'", 10000);
+        },
+        irA: function (url) {
+            location.href = url;
         }
     }
 });

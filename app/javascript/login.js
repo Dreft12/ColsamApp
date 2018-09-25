@@ -45,13 +45,12 @@ new Vue({
                     this.reset();
                     setInterval(this.redireccionar, 3000);
                     setTimeout("location.href = '/ColsamApp/panels/students.html'", 5000);
-                } else {
+                } else if (this.usuario[0].User !== this.user || this.usuario[0].Pass !== this.pass) {
                     this.errorLogin = true;
-                }
-            },
-                response =>{
+                } else {
                     this.errorDB = true;
-                });
+                }
+            });
         },
         redireccionar: function () {
             this.exito = false;

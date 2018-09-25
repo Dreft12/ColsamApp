@@ -24,20 +24,23 @@
                 <v-btn flat class="white--text">Item 1</v-btn>
                 <v-btn flat class="white--text">Item 2</v-btn>
                 <v-btn flat class="white--text">Item 3</v-btn>
-                <v-menu bottom left>
+                <v-menu bottom offset-y>
                     <v-btn flat slot="activator" dark>
                         <div v-for="user in usuario">Bienvenido: {{user.Nombre}} {{user.Apellido}}</div>
                     </v-btn>
                     <v-list>
                         <v-list-tile v-on:click="cookieTheme">
                             <v-list-tile-title>
-                                <v-switch
-                                        label="Tema oscuro"
-                                        v-model="isDark"
-                                ></v-switch>
+                                Tema oscuro
                             </v-list-tile-title>
+                            <v-switch v-model="isDark"></v-switch>
                         </v-list-tile>
-                        <v-btn color="primary" class="white--text" @click="cerrarSesion">Cerrar Sesión</v-btn>
+                        <v-list-tile>
+                            <v-btn block flat @click="irA('perfil.html')">Perfil Estudiantil</v-btn>
+                        </v-list-tile>
+                        <v-list-tile>
+                            <v-btn  block flat @click="cerrarSesion">Cerrar Sesión</v-btn>
+                        </v-list-tile>
                     </v-list>
                 </v-menu>
             </v-toolbar-items>

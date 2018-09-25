@@ -1,5 +1,5 @@
 new Vue({
-    el: '#app',
+    el: '#login',
     data: {
         user: '',
         pass: '',
@@ -13,7 +13,8 @@ new Vue({
         usuario: [],
         isDark: false,
         dialog: false,
-        dialogMora: false
+        dialogMora: false,
+        inputDisable: false
     },
     mounted() {
         this.isDark = (this.readCookie("dark")==='true');
@@ -38,15 +39,19 @@ new Vue({
                     this.dialogMora = true;
                     this.meses = this.usuario.Meses;
                 } else if (this.usuario[0].User === this.user && this.usuario[0].Pass === this.pass) {
+                    localStorage.setItem('User', JSON.stringify(this.usuario));
                     this.exito = true;
+                    this.inputDisable = true;
+                    this.reset();
                     setInterval(this.redireccionar, 3000);
-                    setTimeout("location.href = '/ColsamApp/panel.php'", 5000);
-                } else if (this.usuario.includes('<br />')) {
-                    this.errorDB = true
+                    setTimeout("location.href = '/ColsamApp/panels/students.html'", 5000);
                 } else {
                     this.errorLogin = true;
                 }
-            })
+            },
+                response =>{
+                    this.errorDB = true;
+                });
         },
         redireccionar: function () {
             this.exito = false;
@@ -79,6 +84,6 @@ new Vue({
                 }
             }
             return null;
-        }
+        },
     }
 });

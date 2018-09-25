@@ -266,3 +266,284 @@
 2018-09-21T04:53:24.677841601 9511.347362s notice: All client connections closed.
 2018-09-21T04:53:24.677841602 9511.347371s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2018-09-21T04:53:24.877061000 9511.545929s notice: Storage engine shut down.
+2018-09-21T05:34:24.769758600 0.023021s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-21T05:34:24.780511300 0.034492s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-21T05:34:24.780511301 0.034639s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-21T05:34:24.951893700 0.205972s info: Automatically using cache size of 1211 MB
+2018-09-21T05:34:24.970446900 0.224518s notice: Listening for intracluster connections on port 29015
+2018-09-21T05:34:25.622794300 0.876316s notice: Listening for client driver connections on port 28015
+2018-09-21T05:34:25.622794301 0.876790s notice: Listening for administrative HTTP connections on port 8080
+2018-09-21T05:34:25.625724100 0.879711s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T05:34:25.627683500 0.881286s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T05:34:25.628651000 0.882417s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T05:34:25.628651001 0.882426s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-21T05:34:26.113028200 1.366614s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 2.
+2018-09-21T05:34:26.169670300 1.423676s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 2. Latest log index is 3.
+2018-09-21T05:34:26.418694900 1.672229s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 6.
+2018-09-21T05:34:26.489982500 1.743811s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 6. Latest log index is 18.
+2018-09-21T05:34:26.722409500 1.976329s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 6.
+2018-09-21T05:34:26.952882100 2.206380s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 6.
+2018-09-21T05:34:27.105224700 2.358737s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 5.
+2018-09-21T05:34:27.111081300 2.365050s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 6. Latest log index is 19.
+2018-09-21T05:34:27.475829900 2.729438s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 6. Latest log index is 20.
+2018-09-21T05:34:27.475829901 2.729558s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 5. Latest log index is 16.
+2018-09-21T05:34:27.528577900 2.782073s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 6.
+2018-09-21T05:34:27.924565100 3.178050s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 6. Latest log index is 20.
+2018-09-21T20:06:20.411096000 4208.405771s notice: Server got Control-C; shutting down...
+2018-09-21T20:06:20.411096001 4208.406057s notice: Shutting down client connections...
+2018-09-21T20:06:20.411096002 4208.406525s notice: All client connections closed.
+2018-09-21T20:06:20.411096003 4208.406535s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-21T20:06:20.440395500 4208.435663s notice: Storage engine shut down.
+2018-09-21T20:23:42.485036700 0.019570s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-21T20:23:42.485036701 0.019859s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-21T20:23:42.487965300 0.022633s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-21T20:23:42.650076100 0.185390s info: Automatically using cache size of 784 MB
+2018-09-21T20:23:42.659841600 0.195201s notice: Listening for intracluster connections on port 29015
+2018-09-21T20:23:43.057303600 0.592554s notice: Listening for client driver connections on port 28015
+2018-09-21T20:23:43.058283600 0.593092s notice: Listening for administrative HTTP connections on port 8080
+2018-09-21T20:23:43.060238800 0.595061s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:23:43.062187700 0.596843s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:23:43.063162700 0.597789s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:23:43.063162701 0.597824s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-21T20:23:43.995789600 1.530566s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 3.
+2018-09-21T20:23:44.034859400 1.569803s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 3. Latest log index is 7.
+2018-09-21T20:23:44.047554800 1.582210s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 7.
+2018-09-21T20:23:44.139345500 1.674608s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 7.
+2018-09-21T20:23:44.202832100 1.738125s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 7. Latest log index is 24.
+2018-09-21T20:23:44.243835400 1.779175s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 7. Latest log index is 22.
+2018-09-21T20:23:44.541698100 2.076394s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 6.
+2018-09-21T20:23:44.684275700 2.219096s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 7.
+2018-09-21T20:23:44.700866600 2.236238s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 6. Latest log index is 20.
+2018-09-21T20:23:44.905956700 2.440622s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 7.
+2018-09-21T20:23:45.028023300 2.563141s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 7. Latest log index is 22.
+2018-09-21T20:23:45.145205800 2.680452s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 7. Latest log index is 24.
+2018-09-21T20:24:18.521795600 36.056849s notice: Server got Control-C; shutting down...
+2018-09-21T20:24:18.521795601 36.057049s notice: Shutting down client connections...
+2018-09-21T20:24:18.522775000 36.057465s notice: All client connections closed.
+2018-09-21T20:24:18.522775001 36.057472s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-21T20:24:18.600896400 36.136109s notice: Storage engine shut down.
+2018-09-21T20:24:29.419295400 0.019785s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-21T20:24:29.419295401 0.020154s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-21T20:24:29.422226500 0.023250s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-21T20:24:29.502306800 0.102815s info: Automatically using cache size of 800 MB
+2018-09-21T20:24:29.509142300 0.109504s notice: Listening for intracluster connections on port 29015
+2018-09-21T20:24:29.633163600 0.233933s notice: Listening for client driver connections on port 28015
+2018-09-21T20:24:29.634140600 0.234307s notice: Listening for administrative HTTP connections on port 8080
+2018-09-21T20:24:29.635117500 0.236160s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:24:29.636097800 0.237080s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:24:29.637071900 0.237882s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:24:29.637071901 0.237887s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-21T20:24:30.767934400 1.368335s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 4.
+2018-09-21T20:24:30.847035200 1.447438s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 4. Latest log index is 11.
+2018-09-21T20:24:31.125357500 1.725950s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 7.
+2018-09-21T20:24:31.187857900 1.788218s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 8.
+2018-09-21T20:24:31.192750100 1.793175s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 8.
+2018-09-21T20:24:31.243531400 1.843893s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 8.
+2018-09-21T20:24:31.266962000 1.867765s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 7. Latest log index is 24.
+2018-09-21T20:24:31.318718600 1.919365s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 8. Latest log index is 26.
+2018-09-21T20:24:31.319695600 1.920182s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 8. Latest log index is 28.
+2018-09-21T20:24:31.336298500 1.936917s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 8. Latest log index is 27.
+2018-09-21T20:24:31.487675900 2.088059s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 8.
+2018-09-21T20:24:31.583371000 2.184059s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 8. Latest log index is 25.
+2018-09-21T20:52:49.428601900 1700.029448s notice: Server got Control-C; shutting down...
+2018-09-21T20:52:49.429576600 1700.029892s notice: Shutting down client connections...
+2018-09-21T20:52:49.429576601 1700.030435s notice: All client connections closed.
+2018-09-21T20:52:49.429576602 1700.030447s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-21T20:52:49.505757200 1700.106349s notice: Storage engine shut down.
+2018-09-21T20:53:00.599052900 0.020538s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-21T20:53:00.599052901 0.020834s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-21T20:53:00.601005100 0.022772s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-21T20:53:00.667411800 0.089478s info: Automatically using cache size of 772 MB
+2018-09-21T20:53:00.680109000 0.101969s notice: Listening for intracluster connections on port 29015
+2018-09-21T20:53:00.810969200 0.232552s notice: Listening for client driver connections on port 28015
+2018-09-21T20:53:00.810969201 0.233039s notice: Listening for administrative HTTP connections on port 8080
+2018-09-21T20:53:00.812928100 0.234766s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:53:00.813898600 0.235969s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:53:00.815857800 0.237391s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T20:53:00.815857801 0.237621s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-21T20:53:01.798275100 1.219765s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 9.
+2018-09-21T20:53:01.834417700 1.256299s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 9. Latest log index is 30.
+2018-09-21T20:53:01.953548700 1.374986s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 9.
+2018-09-21T20:53:02.017027500 1.438536s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 9. Latest log index is 32.
+2018-09-21T20:53:02.183045000 1.604591s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 9.
+2018-09-21T20:53:02.253355800 1.674825s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 9.
+2018-09-21T20:53:02.261168900 1.682895s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 5.
+2018-09-21T20:53:02.388122700 1.809796s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 9. Latest log index is 31.
+2018-09-21T20:53:02.414488600 1.836321s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 9. Latest log index is 28.
+2018-09-21T20:53:02.414488601 1.836431s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 5. Latest log index is 15.
+2018-09-21T20:53:02.753355700 2.174839s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 8.
+2018-09-21T20:53:02.895937000 2.317200s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 8. Latest log index is 27.
+2018-09-21T21:01:27.250575900 506.672162s notice: Server got Control-C; shutting down...
+2018-09-21T21:01:27.250575901 506.672466s notice: Shutting down client connections...
+2018-09-21T21:01:27.251554200 506.672795s notice: All client connections closed.
+2018-09-21T21:01:27.251554201 506.672806s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-21T21:01:27.327724500 506.749591s notice: Storage engine shut down.
+2018-09-21T21:01:28.272064900 0.019396s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-21T21:01:28.273042700 0.019720s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-21T21:01:28.274016000 0.021514s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-21T21:01:28.340425900 0.087629s info: Automatically using cache size of 794 MB
+2018-09-21T21:01:28.347270900 0.094628s notice: Listening for intracluster connections on port 29015
+2018-09-21T21:01:28.476167400 0.222969s notice: Listening for client driver connections on port 28015
+2018-09-21T21:01:28.476167401 0.223478s notice: Listening for administrative HTTP connections on port 8080
+2018-09-21T21:01:28.478123200 0.225028s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T21:01:28.480075700 0.227097s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T21:01:28.481053800 0.227749s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-21T21:01:28.481053801 0.227774s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-21T21:01:29.457628500 1.204431s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 10.
+2018-09-21T21:01:29.502550600 1.249731s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 10. Latest log index is 33.
+2018-09-21T21:01:29.614856000 1.361636s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 6.
+2018-09-21T21:01:29.686145200 1.433477s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 6. Latest log index is 18.
+2018-09-21T21:01:29.704690000 1.451509s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 9.
+2018-09-21T21:01:29.785742200 1.532985s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 9. Latest log index is 31.
+2018-09-21T21:01:30.004495200 1.751285s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 10.
+2018-09-21T21:01:30.188100900 1.934893s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 10.
+2018-09-21T21:01:30.232036100 1.978812s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 10. Latest log index is 35.
+2018-09-21T21:01:30.287710500 2.034532s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 10.
+2018-09-21T21:01:30.468365300 2.215084s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 10. Latest log index is 33.
+2018-09-21T21:01:30.562116900 2.309572s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 10. Latest log index is 35.
+2018-09-21T22:54:38.534702500 6790.282229s notice: Server got Control-C; shutting down...
+2018-09-21T22:54:38.534702501 6790.282866s notice: Shutting down client connections...
+2018-09-21T22:54:38.535680000 6790.283894s notice: All client connections closed.
+2018-09-21T22:54:38.535680001 6790.283911s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-21T22:54:38.572788100 6790.320838s notice: Storage engine shut down.
+2018-09-24T13:04:49.216599000 0.197695s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-24T13:04:49.232222500 0.213721s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-24T13:04:49.233196600 0.213858s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-24T13:04:49.514448300 0.495910s info: Automatically using cache size of 974 MB
+2018-09-24T13:04:49.542770600 0.523815s notice: Listening for intracluster connections on port 29015
+2018-09-24T13:04:50.518357200 1.499874s notice: Listening for client driver connections on port 28015
+2018-09-24T13:04:50.519335000 1.500273s notice: Listening for administrative HTTP connections on port 8080
+2018-09-24T13:04:50.520309400 1.501438s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T13:04:50.521286600 1.502374s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T13:04:50.521286601 1.502756s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T13:04:50.521286602 1.502764s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-24T13:04:50.946094200 1.927088s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 11.
+2018-09-24T13:04:50.968552900 1.949518s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 7.
+2018-09-24T13:04:51.014451800 1.995152s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 11. Latest log index is 36.
+2018-09-24T13:04:51.045710500 2.026585s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 11.
+2018-09-24T13:04:51.054499300 2.035645s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 7. Latest log index is 22.
+2018-09-24T13:04:51.181447300 2.162344s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 11. Latest log index is 37.
+2018-09-24T13:04:51.200985600 2.181838s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 11.
+2018-09-24T13:04:51.286916000 2.268451s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 11. Latest log index is 40.
+2018-09-24T13:04:51.588184200 2.569149s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 10.
+2018-09-24T13:04:51.811817100 2.793342s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 10. Latest log index is 34.
+2018-09-24T13:04:52.070608100 3.051484s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 11.
+2018-09-24T13:04:52.376758500 3.357741s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 11. Latest log index is 39.
+2018-09-24T13:57:26.672050100 3157.654049s notice: Server got Control-C; shutting down...
+2018-09-24T13:57:26.712090700 3157.694019s notice: Shutting down client connections...
+2018-09-24T13:57:26.713066500 3157.695252s notice: All client connections closed.
+2018-09-24T13:57:26.713066501 3157.695263s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-24T13:57:26.910333200 3157.892220s notice: Storage engine shut down.
+2018-09-24T15:05:37.243471400 0.201478s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-24T15:05:37.243471401 0.201744s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-24T15:05:37.243471402 0.201878s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-24T15:05:37.426091500 0.384755s info: Automatically using cache size of 312 MB
+2018-09-24T15:05:37.468095200 0.426096s notice: Listening for intracluster connections on port 29015
+2018-09-24T15:05:38.330390000 1.288403s notice: Listening for client driver connections on port 28015
+2018-09-24T15:05:38.330390001 1.288759s notice: Listening for administrative HTTP connections on port 8080
+2018-09-24T15:05:38.332344100 1.290401s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:05:38.333320200 1.291378s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:05:38.334297200 1.292202s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:05:38.334297201 1.292261s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-24T15:05:38.753244500 1.711247s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 8.
+2018-09-24T15:05:39.020822700 1.979296s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 8. Latest log index is 26.
+2018-09-24T15:05:39.096996600 2.055229s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 12.
+2018-09-24T15:05:39.227858200 2.185988s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 12. Latest log index is 41.
+2018-09-24T15:05:39.232738200 2.190602s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 12.
+2018-09-24T15:05:39.346031600 2.304051s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 11.
+2018-09-24T15:05:39.554029000 2.512573s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 12. Latest log index is 42.
+2018-09-24T15:05:39.554029001 2.512663s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 11. Latest log index is 38.
+2018-09-24T15:05:39.974940600 2.932873s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 12.
+2018-09-24T15:05:40.015944400 2.973907s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 12.
+2018-09-24T15:05:40.271803500 3.229568s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 12. Latest log index is 40.
+2018-09-24T15:05:40.271803501 3.229967s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 12. Latest log index is 44.
+2018-09-24T15:47:50.951817000 2533.909682s notice: Server got Control-C; shutting down...
+2018-09-24T15:47:50.951817001 2533.910052s notice: Shutting down client connections...
+2018-09-24T15:47:50.951817002 2533.910474s notice: All client connections closed.
+2018-09-24T15:47:50.951817003 2533.910486s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-24T15:47:50.992833700 2533.950635s notice: Storage engine shut down.
+2018-09-24T15:48:18.161873000 0.020096s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-24T15:48:18.161873001 0.020362s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-24T15:48:18.163828900 0.022623s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-24T15:48:18.233162800 0.091313s info: Automatically using cache size of 745 MB
+2018-09-24T15:48:18.240978900 0.099291s notice: Listening for intracluster connections on port 29015
+2018-09-24T15:48:18.368904600 0.227034s notice: Listening for client driver connections on port 28015
+2018-09-24T15:48:18.369882100 0.228214s notice: Listening for administrative HTTP connections on port 8080
+2018-09-24T15:48:18.372810200 0.230810s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:48:18.372810201 0.231535s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:48:18.374763200 0.232743s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:48:18.374763201 0.232752s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-24T15:48:19.425072900 1.283351s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 13.
+2018-09-24T15:48:19.452415800 1.310609s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 13.
+2018-09-24T15:48:19.488535200 1.347265s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 13. Latest log index is 44.
+2018-09-24T15:48:19.552989200 1.411120s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 13. Latest log index is 46.
+2018-09-24T15:48:19.907492400 1.765688s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 13.
+2018-09-24T15:48:20.001235300 1.859839s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 13. Latest log index is 45.
+2018-09-24T15:48:20.048108300 1.906294s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 12.
+2018-09-24T15:48:20.177014600 2.035364s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 13.
+2018-09-24T15:48:20.221938500 2.080142s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 9.
+2018-09-24T15:48:20.230727600 2.089082s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 12. Latest log index is 42.
+2018-09-24T15:48:20.497330700 2.355504s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 13. Latest log index is 48.
+2018-09-24T15:48:20.497330701 2.355641s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 9. Latest log index is 29.
+2018-09-24T15:48:49.751334200 31.609608s notice: Server got Control-C; shutting down...
+2018-09-24T15:48:49.751334201 31.609858s notice: Shutting down client connections...
+2018-09-24T15:48:49.751334202 31.610076s notice: All client connections closed.
+2018-09-24T15:48:49.751334203 31.610082s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-24T15:48:49.868531300 31.726837s notice: Storage engine shut down.
+2018-09-24T15:49:09.530209200 0.021909s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-24T15:49:09.530209201 0.022158s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-24T15:49:09.532162000 0.024101s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-24T15:49:09.596615100 0.088372s info: Automatically using cache size of 717 MB
+2018-09-24T15:49:09.604582600 0.095857s notice: Listening for intracluster connections on port 29015
+2018-09-24T15:49:09.734311700 0.226200s notice: Listening for client driver connections on port 28015
+2018-09-24T15:49:09.735287200 0.226788s notice: Listening for administrative HTTP connections on port 8080
+2018-09-24T15:49:09.736267200 0.227776s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:49:09.738216700 0.229727s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:49:09.738216701 0.230188s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-24T15:49:09.738216702 0.230198s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-24T15:49:10.941349200 1.432801s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 13.
+2018-09-24T15:49:11.005311500 1.497386s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 13. Latest log index is 45.
+2018-09-24T15:49:11.060010900 1.551399s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 14.
+2018-09-24T15:49:11.147901700 1.639924s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 14. Latest log index is 50.
+2018-09-24T15:49:11.181091400 1.672596s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 14.
+2018-09-24T15:49:11.259219200 1.750608s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 10.
+2018-09-24T15:49:11.297305300 1.788880s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 14. Latest log index is 52.
+2018-09-24T15:49:11.321716800 1.813381s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 10. Latest log index is 33.
+2018-09-24T15:49:11.493606500 1.985308s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 14.
+2018-09-24T15:49:11.512147700 2.003538s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 14.
+2018-09-24T15:49:11.858831100 2.350565s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 14. Latest log index is 49.
+2018-09-24T15:49:11.858831101 2.350711s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 14. Latest log index is 51.
+2018-09-25T11:39:22.564226900 36253.433891s notice: Server got Control-C; shutting down...
+2018-09-25T11:39:22.615007100 36253.484228s notice: Shutting down client connections...
+2018-09-25T11:39:22.615007101 36253.484714s notice: All client connections closed.
+2018-09-25T11:39:22.615007102 36253.484727s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-25T11:39:23.890399300 36254.759583s notice: Storage engine shut down.
+2018-09-25T11:53:28.084358600 0.029674s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2018-09-25T11:53:28.094135300 0.039261s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-09-25T11:53:28.094135301 0.039381s notice: Loading data from directory C:\\Users\\jorge\\rethinkdb_data
+2018-09-25T11:53:28.436900700 0.381900s info: Automatically using cache size of 959 MB
+2018-09-25T11:53:28.445694500 0.390740s notice: Listening for intracluster connections on port 29015
+2018-09-25T11:53:28.742563200 0.687347s notice: Listening for client driver connections on port 28015
+2018-09-25T11:53:28.742563201 0.687871s notice: Listening for administrative HTTP connections on port 8080
+2018-09-25T11:53:28.743539600 0.688989s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-25T11:53:28.744514900 0.689764s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-25T11:53:28.745490700 0.690570s notice: Listening on http addresses: 127.0.0.1, 192.168.1.9, 172.17.151.17, 169.254.80.80, fe80::2179:186d:28cf:8849%2, fe80::28ab:8c3c:a44f:75fe%13, fe80::fc76:1ec9:cc4c:1526%9
+2018-09-25T11:53:28.745490701 0.690600s notice: Server ready, "ColsamApp" 21820dc3-8f3e-45d5-8c3d-6c47748857af
+2018-09-25T11:53:29.730852000 1.676166s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: Starting a new Raft election for term 15.
+2018-09-25T11:53:29.776759500 1.722247s info: Table 37cac3ea-a90f-49fc-9cb1-bb850ada8435: This server is Raft leader for term 15. Latest log index is 54.
+2018-09-25T11:53:29.907616100 1.852485s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: Starting a new Raft election for term 15.
+2018-09-25T11:53:29.949597900 1.894415s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: Starting a new Raft election for term 14.
+2018-09-25T11:53:29.950586300 1.896137s info: Table 7208230f-1ca4-4c4d-9da3-d4a3281fd326: This server is Raft leader for term 15. Latest log index is 53.
+2018-09-25T11:53:30.017966700 1.962752s info: Table bf380461-2d6a-4790-a4e5-85b2c791e931: This server is Raft leader for term 14. Latest log index is 49.
+2018-09-25T11:53:30.092179500 2.037241s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: Starting a new Raft election for term 15.
+2018-09-25T11:53:30.119524300 2.064595s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Starting a new Raft election for term 15.
+2018-09-25T11:53:30.292373600 2.237931s info: Table 77a6bbcd-cd9a-41f4-befb-790b8eed58f5: This server is Raft leader for term 15. Latest log index is 56.
+2018-09-25T11:53:30.293349200 2.238088s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: This server is Raft leader for term 15. Latest log index is 55.
+2018-09-25T11:53:30.423259000 2.368778s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: Starting a new Raft election for term 11.
+2018-09-25T11:53:30.731827800 2.676910s info: Table 1cfd0e95-14cb-42d9-bc0e-c4fb42d7e1c4: This server is Raft leader for term 11. Latest log index is 37.
+2018-09-25T12:48:55.676659300 3327.622080s info: Table ee880477-0fd8-4fdd-876e-f03aaf54e2ed: Configuration is changing.
+2018-09-25T13:06:31.012680000 4382.958232s notice: Server got Control-C; shutting down...
+2018-09-25T13:06:31.013657200 4382.958960s notice: Shutting down client connections...
+2018-09-25T13:06:31.014633600 4382.959486s notice: All client connections closed.
+2018-09-25T13:06:31.014633601 4382.959509s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-09-25T13:06:31.044906400 4382.990067s notice: Storage engine shut down.

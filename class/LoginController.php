@@ -39,4 +39,6 @@ class LoginController
         }
         return $temp;
     }
+
+r.db('notas').table('valorParametro').eqJoin('idParametro', r.db('notas').table('parametro')).zip()
 }

@@ -43,8 +43,8 @@ new Vue({
                     this.exito = true;
                     this.inputDisable = true;
                     this.reset();
-                    setInterval(this.redireccionar, 3000);
-                    setTimeout("location.href = '/ColsamApp/panels/students.html'", 5000);
+                    //setInterval(this.redireccionar, 3000);
+                   // setTimeout("location.href = '/ColsamApp/panels/students.html'", 5000);
                 } else if (this.usuario[0].User !== this.user || this.usuario[0].Pass !== this.pass) {
                     this.errorLogin = true;
                 } else {

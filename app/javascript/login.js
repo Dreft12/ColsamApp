@@ -17,7 +17,7 @@ new Vue({
         inputDisable: false
     },
     mounted() {
-        this.isDark = (this.readCookie("dark")==='true');
+        this.isDark = (localStorage.getItem("dark")==='true');
     },
     methods: {
         validar: function () {
@@ -71,19 +71,7 @@ new Vue({
             this.pass = '';
         },
         cookieTheme: function () {
-            document.cookie = "dark=" + this.isDark;
-        },
-        readCookie: function (name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0) {
-                    return decodeURIComponent(c.substring(nameEQ.length, c.length));
-                }
-            }
-            return null;
-        },
+            localStorage.setItem("dark", ''+this.isDark);
+        }
     }
 });

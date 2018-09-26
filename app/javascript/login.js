@@ -35,7 +35,7 @@ new Vue({
                 console.log(this.usuario);
                 if (this.usuario.length === 0) {
                     this.errorLogin = true;
-                } else if (this.usuario.Mora === "Si") {
+                } else if (this.usuario[0].Meses > 0) {
                     this.dialogMora = true;
                     this.meses = this.usuario.Meses;
                 } else if (this.usuario[0].User === this.user && this.usuario[0].Pass === this.pass) {
@@ -43,8 +43,18 @@ new Vue({
                     this.exito = true;
                     this.inputDisable = true;
                     this.reset();
-                    //setInterval(this.redireccionar, 3000);
-                   // setTimeout("location.href = '/ColsamApp/panels/students.html'", 5000);
+                    setInterval(this.redireccionar, 3000);
+                    switch (this.usuario[0].valor) {
+                        case 'Estudiante':{
+                            setTimeout("location.href = '/ColsamApp/panels/students.html'", 5000);
+                            break;
+                        }
+                        case 'Docente':{
+                            setTimeout("location.href = '/ColsamApp/panels/teachers.html'", 5000);
+                            break;
+                        }
+                    }
+
                 } else if (this.usuario[0].User !== this.user || this.usuario[0].Pass !== this.pass) {
                     this.errorLogin = true;
                 } else {

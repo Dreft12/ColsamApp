@@ -9,22 +9,16 @@ class LoginController
 
     }
 
-    public function create()
-    {
-        r\table("users")->insert(array(
-            'idUser' => 2,
-            'Nombre' => "Juancho",
-            'Apellido' => "Perez",
-            'User' => "Juanxd",
-            'Pass' => "12345"
-        ))->run(Connect::conectar());
-    }
-
     public function login($user)
     {
         $temp = array();
-        $mora = r\table("users")->run(Connect::conectar())->toArray();
-        $conteo = r\table('estMora')->count()->run(Connect::conectar());
-        $panel = r\table('users')->eqJoin('idRol', r\table('valorParametro'))->zip()->run(Connect::conectar())->toArray();
+        $datos = r\table('users')->getAll($user, array('index' => 'User'))->eqJoin('idValor', r\table('valorParametro'), array('index' => 'idValor'))->zip()->run(Connect::conectar())->toArray();
+        $estMora = r\table('users')->getAll($user, array('index' => 'User'))->eqJoin('idUser', r\table('estMora'), array('index' => 'idEst'))->zip()->run(Connect::conectar())->toArray();
+        if(empty($estMora)){
+            $temp = $datos;
+        }else{
+            $temp = $estMora;
+        }
+        return $temp;
     }
 }

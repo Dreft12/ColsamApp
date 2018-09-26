@@ -4,7 +4,8 @@ new Vue({
         usuario: [],
         isDark: false,
         dialogLogout: false,
-        errorNoIn: false
+        errorNoIn: false,
+        errorNoPer: false
     },
     mounted() {
         this.isDark = (localStorage.getItem("dark")==='true');
@@ -12,6 +13,9 @@ new Vue({
             this.noLogIn();
         }else{
             this.usuario = JSON.parse(localStorage.getItem('User'));
+            if (this.usuario[0].valor !== 'Estudiante'){
+                this.noLogPe();
+            }
         }
     },
     methods: {
@@ -27,6 +31,10 @@ new Vue({
         noLogIn: function () {
             this.errorNoIn = true;
             setTimeout("location.href = '/ColsamApp/index.html'", 10000);
+        },
+        noLogPe: function(){
+          this.errorNoPer = true;
+          setTimeout("location.href = '/ColsamApp/index.html'", 10000);
         },
         irA: function (url) {
             location.href = url;

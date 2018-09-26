@@ -54,7 +54,21 @@
                     <v-card-text>
                         <v-layout wrap>
                             <v-flex xs12>
-                                Usted no se ha logueado correctamente en el sistema, por favor ingrese sus datos en la pagina de inicio. Será reedirigido a la pagina de inicio en 10 segundos.
+                                Usted no se ha logueado correctamente en el sistema, por favor ingrese sus datos en la pagina de inicio. Será redireccionado a la pagina de inicio en 10 segundos.
+                            </v-flex>
+                        </v-layout>
+                    </v-card-text>
+                </v-card>
+            </v-dialog>
+            <v-dialog v-model="errorNoPer" max-width="500px" persistent>
+                <v-card>
+                    <v-card-title>
+                        <span class="headline">Error al ingresar</span>
+                    </v-card-title>
+                    <v-card-text>
+                        <v-layout wrap>
+                            <v-flex xs12>
+                                Usted no tiene permisos para ingresar a este panel, Será redireccionado a la pagina de inicio en 10 segundos.
                             </v-flex>
                         </v-layout>
                     </v-card-text>

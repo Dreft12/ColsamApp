@@ -15,10 +15,10 @@ new Vue({
         telAcudiente: '',
         dialogFecha: false,
         form: true,
-        nombreRules: [
-            v => !!v || 'Name is required',
-            v => (v && v.length <= 10) || 'Name must be less than 10 characters'
-        ],
+        passNew: '',
+        passNew2: '',
+        alertOk: false,
+        respuesta: ''
     },
     mounted() {
         this.isDark = (localStorage.getItem("dark")==='true');
@@ -59,11 +59,20 @@ new Vue({
             location.href = url;
         },
         guardar: function () {
-            this.$http.post('/ColsamApp/data/data_students.php', {user: this.user, nombre: this.nombre, apellido: this.apellido}).then(function (respuesta) {
-                if (respuesta.body === "ok"){
-
-                }
-            });
+                this.$http.post('/ColsamApp/data/data_students.php', {user: this.user, nombre: this.nombre, apellido: this.apellido, email: this.email
+                , edad: this.edad, telAcudiente: this.telAcudiente, passNew: this.passNew, passNew2: this.passNew2}).then(function (respuesta) {
+                    console.log(respuesta.body);
+                    this.respuesta = respuesta.body;
+                    if (this.respuesta === "ok"){
+                        this.alertOk = true;
+                        //setTimeout(this.cerrar,1000);
+                    }else{
+                    }
+                });
+            },
+        cerrar: function () {
+            this.alertOk = false;
+            this.perfil = false;
         }
     }
 });

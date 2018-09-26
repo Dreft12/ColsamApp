@@ -1,6 +1,5 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'] . "/ColsamApp/db/Connect.php";
-
 class LoginController
 {
 

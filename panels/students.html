@@ -97,6 +97,7 @@
                 scrollable
         >
             <v-card tile>
+                <v-form v-model="form" lazy-validation>
                 <v-toolbar card dark color="primary">
                     <v-btn icon @click.native="perfil = false" dark>
                         <v-icon>close</v-icon>
@@ -108,7 +109,7 @@
                     </v-toolbar-items>
                 </v-toolbar>
                 <v-card-text>
-                    <v-form v-model="form" lazy-validation>
+                    <v-alert type="success" v-model="alertOk" dismissible>Datos actualizados correctamente</v-alert>
                     <v-list three-line subheader>
                         <v-subheader>A continuación modifique sus datos si lo requiere.</v-subheader>
                         <v-list-tile avatar>
@@ -120,7 +121,7 @@
                         <v-list-tile avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Nombres:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="nombre" :rules="nombreRules" required></v-text-field></v-list-tile-content>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="nombre" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar>
@@ -153,8 +154,14 @@
                         <v-subheader>Cambiar contraseña</v-subheader>
                         <v-list-tile avatar>
                             <v-list-tile-content>
-                                <v-list-tile-title>Contraseña actual:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-btn @click.stop="dialogFecha = true" color="primary" >Seleccionar fecha <v-dialog max-width="290px" v-model="dialogFecha" ><v-date-picker v-model="edad"></v-date-picker></v-dialog> </v-btn></v-list-tile-content>
+                                <v-list-tile-title>Nueva contraseña:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="passNew" required></v-text-field></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Repite nueva contraseña:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="passNew2" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>

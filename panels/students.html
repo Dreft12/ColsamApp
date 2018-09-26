@@ -21,9 +21,6 @@
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
-                <v-btn flat class="white--text">Item 1</v-btn>
-                <v-btn flat class="white--text">Item 2</v-btn>
-                <v-btn flat class="white--text">Item 3</v-btn>
                 <v-menu bottom offset-y>
                     <v-btn flat slot="activator" dark>
                         <div v-for="user in usuario">Bienvenido: {{user.Nombre}} {{user.Apellido}}</div>
@@ -36,7 +33,7 @@
                             <v-switch v-model="isDark"></v-switch>
                         </v-list-tile>
                         <v-list-tile>
-                            <v-btn block flat @click="irA('perfil.html')">Perfil Estudiantil</v-btn>
+                            <v-btn block flat @click.stop="perfil = true">Perfil Estudiantil</v-btn>
                         </v-list-tile>
                         <v-list-tile>
                             <v-btn  block flat @click="cerrarSesion">Cerrar Sesión</v-btn>
@@ -92,8 +89,81 @@
                 Barrranquilla
             </v-container>
         </v-footer>
+        <v-dialog
+                v-model="perfil"
+                fullscreen
+                transition="dialog-bottom-transition"
+                :overlay="false"
+                scrollable
+        >
+            <v-card tile>
+                <v-toolbar card dark color="primary">
+                    <v-btn icon @click.native="perfil = false" dark>
+                        <v-icon>close</v-icon>
+                    </v-btn>
+                    <v-toolbar-title>Perfil Estudiantil</v-toolbar-title>
+                    <v-spacer></v-spacer>
+                    <v-toolbar-items>
+                        <v-btn dark flat @click.native="guardar">Guardar</v-btn>
+                    </v-toolbar-items>
+                </v-toolbar>
+                <v-card-text>
+                    <v-form v-model="form" lazy-validation>
+                    <v-list three-line subheader>
+                        <v-subheader>A continuación modifique sus datos si lo requiere.</v-subheader>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Usuario:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="user" readonly></v-text-field></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Nombres:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="nombre" :rules="nombreRules" required></v-text-field></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Apellidos:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="apellido" required></v-text-field></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Email:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="email" required></v-text-field></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Telefono Acudiente:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="telAcudiente" required></v-text-field></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Fecha Nacimiento:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-btn @click.stop="dialogFecha = true" color="primary" >Seleccionar fecha <v-dialog max-width="290px" v-model="dialogFecha" ><v-date-picker v-model="edad"></v-date-picker></v-dialog> </v-btn></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                    </v-list>
+                    <v-divider></v-divider>
+                    <v-list three-line subheader>
+                        <v-subheader>Cambiar contraseña</v-subheader>
+                        <v-list-tile avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Contraseña actual:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-btn @click.stop="dialogFecha = true" color="primary" >Seleccionar fecha <v-dialog max-width="290px" v-model="dialogFecha" ><v-date-picker v-model="edad"></v-date-picker></v-dialog> </v-btn></v-list-tile-content>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                    </v-list>
+                    </v-form>
+                </v-card-text>
+                <div style="flex: 1 1 auto;"></div>
+            </v-card>
+        </v-dialog>
     </v-app>
-
 </div>
 <script src="../app/javascript/vue.js"></script>
 <script src="../app/javascript/vuetify.js"></script>

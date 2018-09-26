@@ -5,7 +5,20 @@ new Vue({
         isDark: false,
         dialogLogout: false,
         errorNoIn: false,
-        errorNoPer: false
+        errorNoPer: false,
+        perfil: false,
+        nombre: '',
+        apellido: '',
+        user: '',
+        email: '',
+        edad: '',
+        telAcudiente: '',
+        dialogFecha: false,
+        form: true,
+        nombreRules: [
+            v => !!v || 'Name is required',
+            v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+        ],
     },
     mounted() {
         this.isDark = (localStorage.getItem("dark")==='true');
@@ -13,6 +26,12 @@ new Vue({
             this.noLogIn();
         }else{
             this.usuario = JSON.parse(localStorage.getItem('User'));
+            this.nombre= this.usuario[0].Nombre;
+            this.apellido = this.usuario[0].Apellido;
+            this.email = this.usuario[0].Email;
+            this.user = this.usuario[0].User;
+            this.edad = this.usuario[0].Edad;
+            this.telAcudiente = this.usuario[0].TelAcudiente;
             if (this.usuario[0].valor !== 'Estudiante'){
                 this.noLogPe();
             }
@@ -38,6 +57,13 @@ new Vue({
         },
         irA: function (url) {
             location.href = url;
+        },
+        guardar: function () {
+            this.$http.post('/ColsamApp/data/data_students.php', {user: this.user, nombre: this.nombre, apellido: this.apellido}).then(function (respuesta) {
+                if (respuesta.body === "ok"){
+
+                }
+            });
         }
     }
 });

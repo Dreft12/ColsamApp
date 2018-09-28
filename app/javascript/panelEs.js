@@ -61,11 +61,12 @@ new Vue({
         guardar: function () {
                 this.$http.post('/ColsamApp/data/data_students.php', {user: this.user, nombre: this.nombre, apellido: this.apellido, email: this.email
                 , edad: this.edad, telAcudiente: this.telAcudiente, passNew: this.passNew, passNew2: this.passNew2}).then(function (respuesta) {
-                    console.log(respuesta.body);
                     this.respuesta = respuesta.body;
-                    if (this.respuesta === "ok"){
+                    console.log(this.respuesta);
+                    if (this.respuesta === "\"si\""){
                         this.alertOk = true;
-                        //setTimeout(this.cerrar,1000);
+                        setTimeout(this.cerrar,2000);
+                        console.log("chupala");
                     }else{
                     }
                 });

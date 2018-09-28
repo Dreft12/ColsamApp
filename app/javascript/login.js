@@ -54,7 +54,6 @@ new Vue({
                             break;
                         }
                     }
-
                 } else if (this.usuario[0].User !== this.user || this.usuario[0].Pass !== this.pass) {
                     this.errorLogin = true;
                 } else {

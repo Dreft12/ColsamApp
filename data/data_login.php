@@ -6,4 +6,3 @@ if(!isset($_SESSION['LoginController'])){
 }
 $request = json_decode(file_get_contents('php://input'));
 echo json_encode($_SESSION['LoginController']->login($request->user));
-

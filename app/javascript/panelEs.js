@@ -18,7 +18,8 @@ new Vue({
         passNew: '',
         passNew2: '',
         alertOk: false,
-        respuesta: ''
+        respuesta: '',
+        errorUpdate: false
     },
     mounted() {
         this.isDark = (localStorage.getItem("dark")==='true');
@@ -26,12 +27,7 @@ new Vue({
             this.noLogIn();
         }else{
             this.usuario = JSON.parse(localStorage.getItem('User'));
-            this.nombre= this.usuario[0].Nombre;
-            this.apellido = this.usuario[0].Apellido;
-            this.email = this.usuario[0].Email;
-            this.user = this.usuario[0].User;
-            this.edad = this.usuario[0].Edad;
-            this.telAcudiente = this.usuario[0].TelAcudiente;
+            this.inicio();
             if (this.usuario[0].valor !== 'Estudiante'){
                 this.noLogPe();
             }
@@ -63,17 +59,27 @@ new Vue({
                 , edad: this.edad, telAcudiente: this.telAcudiente, passNew: this.passNew, passNew2: this.passNew2}).then(function (respuesta) {
                     this.respuesta = respuesta.body;
                     console.log(this.respuesta);
-                    if (this.respuesta === "\"si\""){
+                    if (this.respuesta[1] === "si"){
                         this.alertOk = true;
-                        setTimeout(this.cerrar,2000);
-                        console.log("chupala");
-                    }else{
+                        setTimeout(this.cerrar,5000);
+                        this.usuario = this.respuesta;
+                        this.inicio();
+                    }else if(this.respuesta[0] === "no"){
+                        this.errorUpdate = true;
                     }
                 });
             },
         cerrar: function () {
             this.alertOk = false;
             this.perfil = false;
+        },
+        inicio: function () {
+            this.nombre= this.usuario[0].Nombre;
+            this.apellido = this.usuario[0].Apellido;
+            this.email = this.usuario[0].Email;
+            this.user = this.usuario[0].User;
+            this.edad = this.usuario[0].Edad;
+            this.telAcudiente = this.usuario[0].TelAcudiente;
         }
     }
 });

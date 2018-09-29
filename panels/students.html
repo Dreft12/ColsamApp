@@ -23,7 +23,7 @@
             <v-toolbar-items>
                 <v-menu bottom offset-y>
                     <v-btn flat slot="activator" dark>
-                        <div v-for="user in usuario">Bienvenido: {{user.Nombre}} {{user.Apellido}}</div>
+                        <div>Bienvenido: {{nombre}} {{apellido}}</div>
                     </v-btn>
                     <v-list>
                         <v-list-tile v-on:click="cookieTheme">
@@ -109,7 +109,8 @@
                     </v-toolbar-items>
                 </v-toolbar>
                 <v-card-text>
-                    <v-alert type="success" v-model="alertOk" dismissible>Datos actualizados correctamente, inicia sesion nuevamente para que los cambios surtan efecto</v-alert>
+                    <v-alert type="success" v-model="alertOk" dismissible>Datos actualizados correctamente, su perfil se actualizará al cerrarse esta ventana automaticamente.</v-alert>
+                    <v-alert type="error" v-model="errorUpdate" dismissible>Los datos no se pudieron actualizar, ya que los mismos se encuentran registrados en la base de datos.</v-alert>
                     <v-list three-line subheader>
                         <v-subheader>A continuación modifique sus datos si lo requiere.</v-subheader>
                         <v-list-tile avatar>

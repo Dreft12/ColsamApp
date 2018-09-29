@@ -111,6 +111,7 @@
                 <v-card-text>
                     <v-alert type="success" v-model="alertOk" dismissible>Datos actualizados correctamente, su perfil se actualizará al cerrarse esta ventana automaticamente.</v-alert>
                     <v-alert type="error" v-model="errorUpdate" dismissible>Los datos no se pudieron actualizar, ya que los mismos se encuentran registrados en la base de datos.</v-alert>
+                    <v-alert type="error" v-model="errorPassNew" dismissible>Las contraseñas no coindiden, por favor revise los datos en el campo contraseña.</v-alert>
                     <v-list three-line subheader>
                         <v-subheader>A continuación modifique sus datos si lo requiere.</v-subheader>
                         <v-list-tile avatar>

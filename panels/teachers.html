@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Panel de estudiante - ColsamApp</title>
+    <title>Panel de Docentes - ColsamApp</title>
 </head>
 <body>
 <div id="panel">
@@ -33,7 +33,7 @@
                             <v-switch v-model="isDark"></v-switch>
                         </v-list-tile>
                         <v-list-tile>
-                            <v-btn block flat @click.stop="perfil = true">Perfil Estudiantil</v-btn>
+                            <v-btn block flat @click.stop="perfil = true">Perfil Docente</v-btn>
                         </v-list-tile>
                         <v-list-tile>
                             <v-btn  block flat @click="cerrarSesion">Cerrar Sesión</v-btn>
@@ -102,7 +102,7 @@
                     <v-btn icon @click.native="perfil = false" dark>
                         <v-icon>close</v-icon>
                     </v-btn>
-                    <v-toolbar-title>Perfil Estudiantil</v-toolbar-title>
+                    <v-toolbar-title>Perfil Docente</v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-toolbar-items>
                         <v-btn dark flat @click.native="guardar">Guardar</v-btn>
@@ -140,8 +140,8 @@
                         </v-list-tile>
                         <v-list-tile avatar>
                             <v-list-tile-content>
-                                <v-list-tile-title>Telefono Acudiente:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="telAcudiente" required></v-text-field></v-list-tile-content>
+                                <v-list-tile-title>Telefono:</v-list-tile-title>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="tel" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar>
@@ -176,7 +176,7 @@
 </div>
 <script src="../app/javascript/vue.js"></script>
 <script src="../app/javascript/vuetify.js"></script>
-<script src="../app/javascript/panelEs.js"></script>
+<script src="../app/javascript/panelDo.js"></script>
 <script src="../app/javascript/vue-resource@1.3.5"></script>
 </body>
 </html>

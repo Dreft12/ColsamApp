@@ -37,7 +37,7 @@ new Vue({
                     this.errorLogin = true;
                 } else if (this.usuario[0].Meses > 0) {
                     this.dialogMora = true;
-                    this.meses = this.usuario.Meses;
+                    this.meses = this.usuario[0].Meses;
                 } else if (this.usuario[0].User === this.user && this.usuario[0].Pass === this.pass) {
                     localStorage.setItem('User', JSON.stringify(this.usuario));
                     this.exito = true;

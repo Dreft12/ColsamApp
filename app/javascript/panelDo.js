@@ -58,7 +58,7 @@ new Vue({
         guardar: function () {
             if(this.validarContrasena()){
                 this.$http.post('/ColsamApp/data/data_teachers.php', {user: this.user, nombre: this.nombre, apellido: this.apellido, email: this.email
-                    , edad: this.edad, telAcudiente: this.telAcudiente, passNew: this.passNew}).then(function (respuesta) {
+                    , edad: this.edad, tel: this.tel, passNew: this.passNew}).then(function (respuesta) {
                     this.respuesta = respuesta.body;
                     console.log(this.respuesta);
                     if (this.respuesta[1] === "si"){
@@ -84,7 +84,7 @@ new Vue({
             this.email = this.usuario[0].Email;
             this.user = this.usuario[0].User;
             this.edad = this.usuario[0].Edad;
-            this.tel = this.usuario[0].Tel;
+            this.tel = this.usuario[0].TelAcudiente;
         },
         validarContrasena: function(){
             return this.passNew === this.passNew2;

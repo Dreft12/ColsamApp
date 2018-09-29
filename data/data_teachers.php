@@ -6,4 +6,4 @@ if(!isset($_SESSION['TeacherController'])){
 }
 $request = json_decode(file_get_contents('php://input'));
 echo json_encode($_SESSION['TeacherController']->updateTeacher($request->user, $request->nombre, $request->apellido,
-    $request->email, $request->telAcudiente, $request->edad, $request->passNew));
+    $request->email, $request->tel, $request->edad, $request->passNew));

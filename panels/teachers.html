@@ -97,7 +97,7 @@
                 scrollable
         >
             <v-card tile>
-                <v-form v-model="form" lazy-validation>
+                <v-form ref="form" v-model="valid" lazy-validation>
                 <v-toolbar card dark color="primary">
                     <v-btn icon @click.native="perfil = false" dark>
                         <v-icon>close</v-icon>
@@ -105,7 +105,7 @@
                     <v-toolbar-title>Perfil Docente</v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-toolbar-items>
-                        <v-btn dark flat @click.native="guardar">Guardar</v-btn>
+                        <v-btn dark flat @click.native="guardar" :disabled="!valid">Guardar</v-btn>
                     </v-toolbar-items>
                 </v-toolbar>
                 <v-card-text>
@@ -123,31 +123,44 @@
                         <v-list-tile avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Nombres:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="nombre" required></v-text-field></v-list-tile-content>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="nombre"  :rules="nombreRules" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Apellidos:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="apellido" required></v-text-field></v-list-tile-content>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="apellido" :rules="apellidoRules" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Email:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="email" required></v-text-field></v-list-tile-content>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="email" :rules="emailRules" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Telefono:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="tel" required></v-text-field></v-list-tile-content>
+                                <v-list-tile-content class="textfield"><v-text-field class="textfield" v-model="tel" :rules="telefonoRules" required></v-text-field></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Fecha Nacimiento:</v-list-tile-title>
-                                <v-list-tile-content class="textfield"><v-btn @click.stop="dialogFecha = true" color="primary" >Seleccionar fecha <v-dialog max-width="290px" v-model="dialogFecha" ><v-date-picker v-model="edad"></v-date-picker></v-dialog> </v-btn></v-list-tile-content>
+                                <v-list-tile-content class="textfield"><v-menu
+                                        ref="menu2"
+                                        :close-on-content-click="false"
+                                        v-model="menu2"
+                                        :nudge-right="40"
+                                        :return-value.sync="edad"
+                                        lazy
+                                        transition="scale-transition"
+                                        offset-y
+                                        full-width
+                                        min-width="290px"
+                                        class="textfield"
+                                ><v-text-field class="textfield" slot="activator" v-model="edad" :rules="edadRules">Seleccionar fecha <v-dialog max-width="290px" v-model="dialogFecha" ><v-date-picker v-model="edad"></v-date-picker></v-dialog> </v-text-field>
+                                    <v-date-picker v-model="edad" @input="$refs.menu2.save(edad)"></v-date-picker></v-menu></v-list-tile-content>
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>
@@ -167,8 +180,8 @@
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>
-                    </v-form>
                 </v-card-text>
+                    </v-form>
                 <div style="flex: 1 1 auto;"></div>
             </v-card>
         </v-dialog>

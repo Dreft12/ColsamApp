@@ -9,12 +9,33 @@ new Vue({
         perfil: false,
         nombre: '',
         apellido: '',
+        menu2: false,
+        nombreRules: [
+            v => !!v || 'Nombre es requerido',
+            v => (v && v.length <= 30) || 'Nombre debe ser maximo de 30 caracteres'
+        ],
+        apellidoRules: [
+            v => !!v || 'Apellido es requerido',
+            v => (v && v.length <= 30) || 'Apellido debe ser maximo de 30 caracteres'
+        ],
+        emailRules: [
+            v => !!v || 'E-mail es requerido',
+            v => /.+@.+/.test(v) || 'E-mail debe ser valido'
+        ],
+        telefonoRules: [
+            v => !!v || 'Telefono es requerido',
+            v => (v && v.length <= 10) || 'Telefono debe tener maximo 10 caracteres'
+        ],
+        edadRules: [
+            v => !!v || 'Edad es requerido',
+            v => (v && v.length <= 10) || 'Edad debe ser seleccionado debe tener maximo 10 caracteres'
+        ],
         user: '',
         email: '',
         edad: '',
         tel: '',
         dialogFecha: false,
-        form: true,
+        valid: true,
         passNew: '',
         passNew2: '',
         alertOk: false,
@@ -79,6 +100,7 @@ new Vue({
             this.perfil = false;
         },
         inicio: function () {
+            console.log(this.usuario);
             this.nombre= this.usuario[0].Nombre;
             this.apellido = this.usuario[0].Apellido;
             this.email = this.usuario[0].Email;

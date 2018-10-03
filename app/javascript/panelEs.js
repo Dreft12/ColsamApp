@@ -20,7 +20,29 @@ new Vue({
         alertOk: false,
         respuesta: '',
         errorUpdate: false,
-        errorPassNew: false
+        errorPassNew: false,
+        menu2: false,
+        nombreRules: [
+            v => !!v || 'Nombre es requerido',
+            v => (v && v.length <= 30) || 'Nombre debe ser maximo de 30 caracteres'
+        ],
+        apellidoRules: [
+            v => !!v || 'Apellido es requerido',
+            v => (v && v.length <= 30) || 'Apellido debe ser maximo de 30 caracteres'
+        ],
+        emailRules: [
+            v => !!v || 'E-mail es requerido',
+            v => /.+@.+/.test(v) || 'E-mail debe ser valido'
+        ],
+        telefonoRules: [
+            v => !!v || 'Telefono es requerido',
+            v => (v && v.length <= 10) || 'Telefono debe tener maximo 10 caracteres'
+        ],
+        edadRules: [
+            v => !!v || 'Edad es requerido',
+            v => (v && v.length <= 10) || 'Edad debe ser seleccionado debe tener maximo 10 caracteres'
+        ],
+        valid: true,
     },
     mounted() {
         this.isDark = (localStorage.getItem("dark")==='true');

@@ -1,4 +1,4 @@
-# my-app
+# ColsamApp
 
 ## Project setup
 ```

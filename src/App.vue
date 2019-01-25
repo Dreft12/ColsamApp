@@ -99,7 +99,7 @@
                             </v-card-text>
                             <v-card-actions>
                                 <v-spacer></v-spacer>
-                                <v-btn v-on:click="validar" color="primary">Entrar</v-btn>
+                                <v-btn v-on:click="registro" color="primary">Entrar</v-btn>
                                 <v-btn v-on:click="reset" color="primary">Limpiar</v-btn>
                             </v-card-actions>
                         </v-card>
@@ -113,6 +113,7 @@
   </v-app>
 </template>
 <script>
+    import firebase from 'firebase'
   export default {
     data: () => ({
       drawer: null,
@@ -139,6 +140,16 @@
       source: String
     },
       methods:{
+        registro: function () {
+            firebase.auth().createUserWithEmailAndPassword(this.user, this.pass).then(
+                function (user) {
+                    alert('Usuario creado correctamente');
+                },
+                function (err) {
+                    alert('Oops..' + err.message);
+                }
+            );
+        },
           dialogActivar: function () {
               this.dialog = true
           },

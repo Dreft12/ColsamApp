@@ -46,6 +46,10 @@
     width: 70%;
 }
 
+.logoMargin{
+    margin-right: -20px!important;
+}
+
 .alertCerrar{
     box-shadow: none!important;
     border-radius: 2px;
@@ -59,7 +63,9 @@
     flex-flow: wrap;
     justify-content: center;
 }
-
+.v-list__tile__content{
+    align-items: initial!important;
+}
 @media screen and (max-width: 1601px) {
     .toolbar{
         height:11%!important

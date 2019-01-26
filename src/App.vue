@@ -1,10 +1,13 @@
 <template>
   <v-app :dark="isDark" id="inspire" class="back">
-      <v-toolbar app color="primary" class="toolbar">
+      <v-toolbar app color="primary">
+          <v-toolbar-title class="logoMargin">
+          <v-img :src="require('@/assets/logo.png')" class="logo" height="66" width="54"></v-img>
+          </v-toolbar-title>
           <v-toolbar-title class="white--text titulo">
-              <v-img :src="require('@/assets/logo.png')" class="logo" height="66" width="54"></v-img>Bienvenidos a ColsamApp</v-toolbar-title>
+              ColsamApp</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-toolbar-items>
+          <v-toolbar-items class="hidden-md-and-down">
               <v-btn flat class="white--text">Quienes somos</v-btn>
               <v-btn flat class="white--text">Ayuda</v-btn>
               <v-btn flat slot="activator" @click="dialogActivar" class="white--text">Contactenos</v-btn>
@@ -60,23 +63,30 @@
               <v-btn flat icon color="white" v-on:click="irA('https://github.com/Dreft12/ColsamApp')">
                   <v-icon>favorite</v-icon>
               </v-btn>
-              <v-menu bottom offset-y left>
-                  <v-btn slot="activator" dark icon>
-                      <v-icon>more_vert</v-icon>
-                  </v-btn>
-                  <v-list>
-                      <v-list-tile v-on:click="cookieTheme">
-                          <v-list-tile-title><v-switch
-                                  label="Tema oscuro"
-                                  v-model="isDark"
-                          ></v-switch>
-                          </v-list-tile-title>
-                      </v-list-tile>
-                      <v-btn color="primary">¿Olvidaste la contraseña?</v-btn>
-                  </v-list>
-              </v-menu>
           </v-toolbar-items>
+          <v-menu bottom offset-y left>
+              <v-btn slot="activator" dark icon>
+                  <v-icon>more_vert</v-icon>
+              </v-btn>
+              <v-list>
+
+                  <v-list-tile v-on:click="cookieTheme">
+                      <v-list-tile-title><v-switch
+                              label="Tema oscuro"
+                              v-model="isDark"
+                      ></v-switch>
+                      </v-list-tile-title>
+                  </v-list-tile>
+                  <v-btn color="primary">¿Olvidaste la contraseña?</v-btn>
+                  <v-list-tile-content class="hidden-md-and-up">
+                  <v-btn color="primary">Quienes somos</v-btn>
+                  <v-btn color="primary">Ayuda</v-btn>
+                      <v-btn color="primary" @click="dialogActivar">Contactenos</v-btn>
+                  </v-list-tile-content>
+              </v-list>
+          </v-menu>
       </v-toolbar>
+
       <v-content>
           <v-container fluid fill-height>
               <v-layout align-center justify-center>

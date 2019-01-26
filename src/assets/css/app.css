@@ -11,6 +11,20 @@
     font-size: 24px!important;
 }
 
+.theme--light.application {
+    background-image: url("../images/wall.jpg")!important;
+    background-size: cover!important;
+}
+
+.theme--dark.application{
+    background-image: url("../images/wall2.jpg")!important;
+    background-size: cover!important;
+}
+
+.back{
+
+}
+
 .titulo{
     display: flex;
     /* flex-direction: row; */
@@ -24,6 +38,8 @@
 
 .footer-bar{
     height: 64px!important;
+    color: #fff!important;
+    background: #f5f5f500!important;
 }
 
 .textfield{

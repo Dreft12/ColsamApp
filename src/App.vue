@@ -201,6 +201,7 @@
                             let uid = firebase.auth().currentUser.uid;
                             let docRef = db.collection("usuarios").doc(uid);
                             this.usuario = firebase.auth().currentUser;
+                            localStorage.setItem('usuario', JSON.stringify(this.usuario));
                             this.exito = true;
                             this.errorLogin = false;
                             this.errorUser = false;
@@ -209,15 +210,15 @@
                             this.pass = '';
                             docRef.get().then(doc => {
                                 localStorage.setItem('user', JSON.stringify(doc.data()));
-                                setInterval(this.redireccionar, 3000);
+                                setInterval(this.redireccionar, 2000);
                                 switch (doc.data().tipo) {
                                     case 'est':{
                                         //this.$router.push('student');
-                                        setTimeout("location.href = '/student'", 5000);
+                                        setTimeout("location.href = '/student'", 4000);
                                         break;
                                     }
                                     case 'adm':{
-                                        setTimeout("location.href = '/teachers'", 5000);
+                                        setTimeout("location.href = '/teachers'", 4000);
                                         break;
                                     }
                                 }

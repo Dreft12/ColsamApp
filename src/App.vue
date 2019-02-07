@@ -2,7 +2,7 @@
     <v-app :dark="isDark" id="inspire" class="back">
         <v-toolbar app color="primary">
             <v-toolbar-title class="logoMargin">
-                <v-img :src="require('@/assets/logo.png')" class="logo" height="66" width="54"></v-img>
+                <v-img src="https://firebasestorage.googleapis.com/v0/b/colsamapp.appspot.com/o/logo%2Flogo.png?alt=media&token=d985d93c-2f39-4758-ba21-07fb86d99401" class="logo" height="66" width="54"></v-img>
             </v-toolbar-title>
             <v-toolbar-title class="white--text titulo">
                 ColsamApp

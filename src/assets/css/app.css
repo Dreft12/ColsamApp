@@ -12,12 +12,12 @@
 }
 
 .theme--light.application {
-    background-image: url("../images/wall.jpg")!important;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/colsamapp.appspot.com/o/wall%2Fwall.jpg?alt=media&token=213d4019-019e-42c8-ae32-6cf856f1a6c1")!important;
     background-size: cover!important;
 }
 
 .theme--dark.application{
-    background-image: url("../images/wall2.jpg")!important;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/colsamapp.appspot.com/o/wall%2Fwall2.jpg?alt=media&token=74afb499-4469-4302-81cb-76787652fd07")!important;
     background-size: cover!important;
 }
 

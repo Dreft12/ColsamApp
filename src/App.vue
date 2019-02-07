@@ -11,7 +11,7 @@
             <v-toolbar-items class="hidden-md-and-down">
                 <v-btn flat class="white--text">Quienes somos</v-btn>
                 <v-btn flat class="white--text">Ayuda</v-btn>
-                <v-btn flat slot="activator" @click="dialogActivar" class="white--text">Contactenos</v-btn>
+                <v-btn flat slot="activator" @click="dialog = true" class="white--text">Contactenos</v-btn>
                 <v-dialog v-model="dialog" persistent max-width="500px">
                     <v-card>
                         <v-card-title>
@@ -44,6 +44,24 @@
                             <v-spacer></v-spacer>
                             <v-btn color="blue darken-1" flat @click.native="dialog = false">Cerrar</v-btn>
                             <v-btn color="blue darken-1" flat @click.native="dialog = false">Enviar</v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
+                <v-dialog v-model="dialogC" persistent max-width="500px">
+                    <v-card>
+                        <v-card-title>
+                            <span class="headline">Recuperar contraseña de la cuenta</span>
+                        </v-card-title>
+                        <v-card-text>
+                        <small>Ingresa tu dirección de correo electronico en el siguiente campo, se te enviará un mensaje para la recuperación de la contraseña.</small>
+                                    <v-flex xs12>
+                                        <v-text-field label="Correo" v-model="correo" required></v-text-field>
+                                    </v-flex>
+                        </v-card-text>
+                        <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="blue darken-1" flat @click.native="dialogC = false">Cerrar</v-btn>
+                            <v-btn color="blue darken-1" flat @click.native="recuperar">Recuperar</v-btn>
                         </v-card-actions>
                     </v-card>
                 </v-dialog>
@@ -80,11 +98,11 @@
                             ></v-switch>
                         </v-list-tile-title>
                     </v-list-tile>
-                    <v-btn color="primary">¿Olvidaste la contraseña?</v-btn>
+                    <v-btn color="primary" @click="dialogC = true">¿Olvidaste la contraseña?</v-btn>
                     <v-list-tile-content class="hidden-md-and-up">
                         <v-btn color="primary">Quienes somos</v-btn>
                         <v-btn color="primary">Ayuda</v-btn>
-                        <v-btn color="primary" @click="dialogActivar">Contactenos</v-btn>
+                        <v-btn color="primary" @click="dialog = true">Contactenos</v-btn>
                     </v-list-tile-content>
                 </v-list>
             </v-menu>
@@ -158,6 +176,7 @@
             drawer: null,
             user: '',
             pass: '',
+            correo: '',
             errorPass: false,
             errorUser: false,
             errorLogin: false,
@@ -169,6 +188,7 @@
             isDark: false,
             dialog: false,
             dialogMora: false,
+            dialogC: false,
             nombres: '',
             inputDisable: false,
             title: 'Inicio de sesión'
@@ -245,8 +265,12 @@
                     }
                 );
             },
-            dialogActivar: function () {
-                this.dialog = true
+            recuperar: function(){
+                firebase.auth().sendPasswordResetEmail(this.correo).then(function() {
+                   console.log("Mensaje enviado")
+                }).catch(function() {
+                    // An error happened.
+                });
             },
             irA: function (url) {
                 location.href = url;

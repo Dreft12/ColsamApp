@@ -8,7 +8,8 @@
                 ColsamApp
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-toolbar-items class="hidden-md-and-down">
+            <v-toolbar-items class="hidden-sm-and-down">
+                <v-btn flat class="white--text" @click="irA('http://www.colsam.edu.co/web/index.php')">Pagina Principal</v-btn>
                 <v-btn flat class="white--text">Quienes somos</v-btn>
                 <v-btn flat class="white--text">Ayuda</v-btn>
                 <v-btn flat slot="activator" @click="dialog = true" class="white--text">Contactenos</v-btn>
@@ -53,10 +54,15 @@
                             <span class="headline">Recuperar contraseña de la cuenta</span>
                         </v-card-title>
                         <v-card-text>
-                        <small>Ingresa tu dirección de correo electronico en el siguiente campo, se te enviará un mensaje para la recuperación de la contraseña.</small>
-                                    <v-flex xs12>
+                            <small>Ingresa tu dirección de correo electronico en el siguiente campo, se te enviará un mensaje para la recuperación de la contraseña.</small>
+                            <v-alert type="error" v-model="errorRec" dismissible>Correo no encontrado, por favor revise la información digitada.
+                            </v-alert>
+                            <v-alert type="success" v-model="exitoRec" dismissible>Correo enviado, por favor revise su buzón de mensajes para seguir con el proceso.
+                            </v-alert>
+
+                            <v-flex xs12>
                                         <v-text-field label="Correo" v-model="correo" required></v-text-field>
-                                    </v-flex>
+                            </v-flex>
                         </v-card-text>
                         <v-card-actions>
                             <v-spacer></v-spacer>
@@ -100,6 +106,7 @@
                     </v-list-tile>
                     <v-btn color="primary" @click="dialogC = true">¿Olvidaste la contraseña?</v-btn>
                     <v-list-tile-content class="hidden-md-and-up">
+                        <v-btn color="primary">Pagina Principal</v-btn>
                         <v-btn color="primary">Quienes somos</v-btn>
                         <v-btn color="primary">Ayuda</v-btn>
                         <v-btn color="primary" @click="dialog = true">Contactenos</v-btn>
@@ -187,6 +194,8 @@
             usuario: [],
             isDark: false,
             dialog: false,
+            exitoRec: false,
+            errorRec: false,
             dialogMora: false,
             dialogC: false,
             nombres: '',
@@ -237,7 +246,7 @@
                                         setTimeout("location.href = '/student'", 4000);
                                         break;
                                     }
-                                    case 'adm':{
+                                    case 'doc':{
                                         setTimeout("location.href = '/teachers'", 4000);
                                         break;
                                     }
@@ -256,21 +265,33 @@
                 this.redireccion = true;
             },
             registro: function () {
-                firebase.auth().createUserWithEmailAndPassword(this.user, this.pass).then(
-                    function (user) {
-                        alert('Usuario creado correctamente');
+               let f = firebase.auth().createUserWithEmailAndPassword(this.user, this.pass).then(
+                    function () {
+                        return true;
                     },
-                    function (err) {
-                        alert('Oops..' + err.message);
+                    function () {
+                        return false;
                     }
                 );
+
             },
             recuperar: function(){
-                firebase.auth().sendPasswordResetEmail(this.correo).then(function() {
-                   console.log("Mensaje enviado")
+                let f = firebase.auth().sendPasswordResetEmail(this.correo).then(function() {
+                    return true;
                 }).catch(function() {
                     // An error happened.
                 });
+
+                f.then(res => {
+                    if (res){
+                        this.exitoRec = true;
+                        this.errorRec = false;
+                        this.correo = '';
+                    }else{
+                        this.exitoRec = false;
+                        this.errorRec = true;
+                    }
+                })
             },
             irA: function (url) {
                 location.href = url;

@@ -266,8 +266,7 @@
         storageBucket: "colsamapp.appspot.com",
         messagingSenderId: "374315306977"
     };
-    let app = firebase.initializeApp(config);
-    let db = firebase.firestore(app);
+    firebase.initializeApp(config);
 
     export default {
         data: () => ({
@@ -357,8 +356,7 @@
                 profile.updateProfile({
                     displayName: this.usuario.displayName,
                 }).then(function () {
-                }).catch(function (error) {
-                    console.log(error)
+                }).catch(function () {
                 });
                 profile.updateEmail(this.usuario.email).then(result => {
                     return result;
@@ -379,7 +377,7 @@
                     profile.updatePassword(this.passNew).then(() => {
                             this.alertPass = true;
                         }
-                    ).catch((error) => {
+                    ).catch(() => {
                         this.alertPass = false;
                     });
                 }
